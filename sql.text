@@ -1,0 +1,42 @@
+CREATE TABLE Movies (
+    Gener id INTEGER PRIMARY KEY,
+    Action flim TEXT,
+    Adventure flim TEXT,
+    Animated flim Text,
+    Comedy flim Text,
+);
+
+INSERT INTO Movies 
+VALUES(1, "Vikram", "Avatar", "The Bad Guys", "Ticket to Paradise");
+
+SELECT Name, Dance, Adventure from Artist join Movies;
+----------------------------------------------------------------
+CREATE TABLE Multiplemedia(
+    id INTEGER PRIMARY KEY,
+    Audio BLOB,
+    video BLOB,
+    Image BLOB
+);
+
+INSERT INTO Multiplemedia
+VALUES(1,"c:\users\Audio\mp3","c:\users\videoio\vlc.1","c:\users\pictures\img")
+----------------------------------------------------------------
+CREATE TABLE ReviewUsers(
+    User_id INTEGER PRIMARY KEY,
+    Content TEXT,
+    Ratings TEXT
+     
+);
+
+INSERT INTO ReviewUsers
+VALUES(1,"movie content", "four ratings")
+-----------------------------------------------------------------
+CREATE TABLE Artist(
+    Artist_id INTEGER PRIMARY KEY,
+    Name TEXT,
+    Dance TEXT,
+    Action Text   
+);
+INSERT INTO Artist
+VALUES(1,"kamal","well","good")
+
